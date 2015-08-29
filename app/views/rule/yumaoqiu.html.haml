@@ -1,0 +1,172 @@
+= render("/layouts/header")
+%div{"data-role" => "page", "id" => "jifen"}
+  %div{"data-role" => "content"}
+    %h2.text-center 羽毛球计分规则
+    %ol.list-group
+      %li.list-group-item 1. 21 分制，3局2胜为佳
+      %li.list-group-item 2. 每球得分制
+      %li.list-group-item 3. 每回合中，取胜的一方加 1 分
+      %li.list-group-item 4. 当双方均为 20 分时，领先对方 2 分的一方赢得该局比赛
+      %li.list-group-item 5. 当双方均为 29 分时，先取得 30 分的一方赢得该局比赛
+      %li.list-group-item 6. 一局比赛的获胜方在下一局率先发球
+  %div{"data-role" => "footer", "data-position" => "fixed", "data-fullscreen" => "true"}
+    %div{"data-role" => "navbar"}
+      %ul
+        %li
+          %a{"data-role" => "button", "href" => "#faqiu", "data-transition" => "slideup"} 发球规则
+
+%div{"data-role" => "page", "id" => "faqiu"}
+  %div{"data-role" => "content"}
+    %h2.text-center 发球规则与发球违例
+    %ol.list-group
+      %li.list-group-item 1. 未将球发在相应的区域内
+      %li.list-group-item 2. 球挂在网上或停在网顶
+      %li.list-group-item 3. 球过网后挂在网上
+      %li.list-group-item 4. 双打时，接发球员的同伴接到球或被球触及
+  %div{"data-role" => "footer", "data-position" => "fixed", "data-fullscreen" => "true"}
+    %div{"data-role" => "navbar"}
+      %ul
+        %li
+          %a{"data-role" => "button", "href" => "#jifen", "data-transition" => "slidedown"} 计分规则
+        %li
+          %a{"data-role" => "button", "href" => "#weili", "data-transition" => "slideup"} 违例规则
+
+%div{"data-role" => "page", "id" => "weili"}
+  %div{"data-role" => "content"}
+    %h2.text-center 比赛进行中违例
+    %ol.list-group
+      %li.list-group-item 1. 球落在场地界线外
+      %li.list-group-item 2. 球从网孔或网下穿过
+      %li.list-group-item 3. 球未从网上方越过
+      %li.list-group-item 4. 球触及天花板或四周墙壁
+      %li.list-group-item 5. 球触及运动员的身体或衣服
+      %li.list-group-item 6. 球触及场地外其他物体或人
+      %li.list-group-item 7. 球被击时停滞在球拍上，紧接着被拖带抛出
+      %li.list-group-item 8. 球在一个回合中被同一方队员多次击中
+      %li.list-group-item 9. 运动员的球拍、身体或衣服，触及球网或球网的支撑物
+      %li.list-group-item 10.过网击球(击球时，球拍与球的最初接触点在击球者网这一方，而后球拍随球过网的情况除外)
+  %div{"data-role" => "footer", "data-position" => "fixed", "data-fullscreen" => "true"}
+    %div{"data-role" => "navbar"}
+      %ul
+        %li
+          %a{"data-role" => "button", "href" => "#faqiu", "data-transition" => "slidedown"} 发球规则
+        %li
+          %a{"data-role" => "button", "href" => "#danda", "data-transition" => "slideup"} 单打比赛规则
+
+%div{"data-role" => "page", "id" => "danda"}
+  %div{"data-role" => "content"}
+    %h2.text-center 羽毛球单打比赛规则
+    %ol.list-group
+      %li.list-group-item 1. 在一局比赛开始时（比分 0 ： 0）或发球方得分为偶数时，发球方在右半场进行发球。当发球方得分为奇数时，在左半场进行发球
+      %li.list-group-item 2. 如果发球方取得一分，那么下一回合其继续发球
+      %li.list-group-item 3. 如果接发球方取得一分，那么下一回合其成为发球方
+  %div{"data-role" => "footer", "data-position" => "fixed", "data-fullscreen" => "true"}
+    %div{"data-role" => "navbar"}
+      %ul
+        %li
+          %a{"data-role" => "button", "href" => "#weili", "data-transition" => "slidedown"} 违例规则
+        %li
+          %a{"data-role" => "button", "href" => "#shuangda", "data-transition" => "slideup"} 双打比赛规则
+
+%div{"data-role" => "page", "id" => "shuangda"}
+  %div{"data-role" => "content"}
+    %h2.text-center 羽毛球双打比赛规则
+    %ol.list-group
+      %li.list-group-item 1. 与单打一样，发球方得分为偶数时，发球方在右半场进行发球。当发球方得分为奇数时，在左半场进行发球
+      %li.list-group-item 2. 如果发球方取得一分，那么下一回合其继续发球，且发球人不变
+      %li.list-group-item 3. 如果接发球方取得一分，那么下一回合其成为发球方
+      %li.list-group-item 4. 当且仅当发球方得分时，发球方的两位选手交换左右半场
+  %div{"data-role" => "footer", "data-position" => "fixed", "data-fullscreen" => "true"}
+    %div{"data-role" => "navbar"}
+      %ul
+        %li
+          %a{"data-role" => "button", "href" => "#danda", "data-transition" => "slidedown"} 单打比赛规则
+        %li
+          %a{"data-role" => "button", "href" => "#sanda", "data-transition" => "slideup"} 三打三规则
+
+%div{"data-role" => "page", "id" => "sanda"}
+  %div{"data-role" => "content"}
+    %h2.text-center 三打三规则
+    %p.alter.alert-success 
+      谓三对三，顾名思义就是三个人对三个人，因此在发球、站位以及一些打法等方面有特别的规定和要求
+      %br
+      发球接发球的站位等基本原则仍要遵循羽毛球的双打规则，如得分为偶数时发球一方站在右半区发球，得分为奇数时发球一方站在左半区发球
+    %ol.list-group
+      %li.list-group-item 1. 比赛前每队确定第一、第二、第三发球队员和接发球队员，分别为A队（A1、A2、A3）、B队（B1、B2、B3）
+      %li.list-group-item 2. A1发球，B1则接发球
+      %li.list-group-item 3. B1发球，A1则接发球，以此类推
+      %li.list-group-item 4. A1发球得分后，换由本方A2发下一个球，即若为A方发球，则A1，A2，A3依次发球
+      %li.list-group-item 5. B1发球得分后，换由本方B2发下一个球，即若为B方发球，则B1，B2，B3依次发球
+
+  %div{"data-role" => "footer", "data-position" => "fixed", "data-fullscreen" => "true"}
+    %div{"data-role" => "navbar"}
+      %ul
+        %li
+          %a{"data-role" => "button", "href" => "#shuangda", "data-transition" => "slidedown"} 双打规则
+        %li
+          %a{"data-role" => "button", "href" => "#qiu", "data-transition" => "slideup"} 羽毛球规格
+
+%div{"data-role" => "page", "id" => "qiu"}
+  %div{"data-role" => "content"}
+    %h2.text-center 羽毛球规格
+    %ol.list-group
+      %li.list-group-item 1. 应由16根羽毛固定在球托上
+      %li.list-group-item 2. 每根羽毛从球托面至羽毛尖的长度，统一为62～70毫米
+      %li.list-group-item 3. 羽毛顶端围成圆形，直径为58～68毫米
+      %li.list-group-item 4. 羽毛应用线或其他适宜材料扎牢
+      %li.list-group-item 5. 球托底部为球形，直径为25～28毫米
+      %li.list-group-item 6. 球重4．74～5．50克
+
+  %div{"data-role" => "footer", "data-position" => "fixed", "data-fullscreen" => "true"}
+    %div{"data-role" => "navbar"}
+      %ul
+        %li
+          %a{"data-role" => "button", "href" => "#sanda", "data-transition" => "slidedown"} 三打三规则
+        %li
+          %a{"data-role" => "button", "href" => "#pai", "data-transition" => "slideup"} 羽毛球拍规格
+
+%div{"data-role" => "page", "id" => "pai"}
+  %div{"data-role" => "content"}
+    %h2.text-center 羽毛球拍规格
+    %ol.list-group
+      %li.list-group-item 1. 羽毛球拍一般由拍头、拍杆、拍柄及拍框与拍杆的接头构成
+      %li.list-group-item 2. 一支球拍的长度不超过68厘米 
+      %li.list-group-item 3. 球拍柄与球拍杆长度不超过42厘米，拍框长度不超过25厘米，宽为20厘米
+      %li.list-group-item 4. 球拍发展方向：重量越来越轻、拍框越来越硬、拍杆弹性越来越好
+
+  %div{"data-role" => "footer", "data-position" => "fixed", "data-fullscreen" => "true"}
+    %div{"data-role" => "navbar"}
+      %ul
+        %li
+          %a{"data-role" => "button", "href" => "#qiu", "data-transition" => "slidedown"} 羽毛球规格
+        %li
+          %a{"data-role" => "button", "href" => "#changdi", "data-transition" => "slideup"} 羽毛球场地标准
+
+%div{"data-role" => "page", "id" => "changdi"}
+  %div{"data-role" => "content"}
+    %h2.text-center 羽毛球场地标准尺寸
+    %ol.list-group
+      %li.list-group-item 1. 羽毛球场地应是一个长方形，用宽40毫米的线画出
+      %li.list-group-item 2. 场地线的颜色最好是白色、黄色或其他容易辨别的颜色
+      %li.list-group-item 3. 所有的线都是它所界定区域的组成部分
+      %li.list-group-item 4. 从球场地面起，网柱高1.55米
+      %li.list-group-item 5. 网柱必须稳固地同地面垂直，并使球网保持紧拉状态
+      %li.list-group-item 6. 网柱应放置在双打的边线上
+      %li.list-group-item 7. 羽毛球球网应由深色优质的细绳编织成，网孔为均匀分布的方形，边长15～20毫米
+      %li.list-group-item 8. 羽毛球球网上下宽760毫米
+      %li.list-group-item 9. 绳索或钢丝须有足够的长度和强度，能牢固地拉紧并与网柱顶部取平
+      %li.list-group-item 10.场地中央网高1.524米，双打边线处网高1.55米
+      %li.list-group-item 11.球网的两端必须与网柱系紧，它们之间不应有空隙
+      %li.list-group-item 12.长13.40米，双打宽6.10米，单打宽5.18米，双打球场对角线长=14.723米，单打球场对角线长=14.366米
+
+  %div{"data-role" => "footer", "data-position" => "fixed", "data-fullscreen" => "true"}
+    %div{"data-role" => "navbar"}
+      %ul
+        %li
+          %a{"data-role" => "button", "href" => "#qiu", "data-transition" => "slidedown"} 羽毛球规格
+
+
+:javascript
+  $(function(){
+    $( "[data-role='header']" ).toolbar();
+    });

@@ -4,7 +4,11 @@ class YmqVideoController < ApplicationController
   layout :set_layout
   
   def set_layout
-    "ymq"
+    if request.host == "www.vxixi.com"
+      "ymq"
+    else
+      "mymq"
+    end
   end
   
   def show

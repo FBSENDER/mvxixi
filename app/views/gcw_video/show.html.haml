@@ -1,6 +1,7 @@
 - title "#{@video.title.empty? ? "#{@video_name}广场舞_正面背面示范_分解动作_教学_视频下载" : @video.title }"
 - keywords "#{@video_name}，#{@video_name}广场舞，广场舞#{@video_name}，#{@video.suggestions_keywords.split(',').join('，')}"
 - head_desc "最新#{@video_name}广场舞视频合集，包含广场舞#{@video_name}正面与背面示范、分解动作，#{@video_name}舞蹈教学，提供#{@video_name}广场舞视频下载。"
+- mobile_url('m.vxixi.com',request.path) if request.host != 'm.vxixi.com'
 
 %section.container
   .row

@@ -4,7 +4,11 @@ class GcwVideoController < ApplicationController
   layout :set_layout
   
   def set_layout
-    "gcw"
+    if request.host == "gcw.vxixi.com"
+      "gcw"
+    else
+      "mgcw"
+    end
   end
 
   def show
